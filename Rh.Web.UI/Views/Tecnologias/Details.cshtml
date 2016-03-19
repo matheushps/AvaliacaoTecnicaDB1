@@ -1,0 +1,44 @@
+﻿@model Rh.Dominio.Tecnologia
+
+@{
+    ViewBag.Title = "Detalhes";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="panel-body panel-primary">
+    <div class="panel-heading ">
+        <svg class="glyph stroked clipboard with paper"><use xlink:href="#stroked-clipboard-with-paper" /></svg>Detalhes da Técnologia
+    </div>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Nome)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Nome)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Descricao)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Descricao)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Peso)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Peso)
+        </dd>
+
+    </dl>
+</div>
+<div class="panel-body panel-default">
+    <div class="panel-heading ">
+        @Html.ActionLink("Voltar", "Index", new { }, new { @class = "btn btn-primary" })
+    </div>
+</div>

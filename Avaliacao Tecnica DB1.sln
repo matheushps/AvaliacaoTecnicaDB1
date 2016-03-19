@@ -1,0 +1,85 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exercicio1", "Exercicio1.Console\Exercicio1.csproj", "{4E3C751A-3F2D-4B1A-B492-70D9617F0850}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exercicio2", "Exercicio2.Console\Exercicio2.csproj", "{7D69BD5D-B864-4EE4-95B3-1D965BB288C5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rh.Dominio", "Rh.Dominio\Rh.Dominio.csproj", "{28E0E19F-69E4-4A77-85F3-2B41BD41658E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rh.ORM", "Rh.ORM\Rh.ORM.csproj", "{C8476FEB-82D2-42E6-BDD6-75B791A7E719}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rh.Web.UI", "Rh.Web.UI\Rh.Web.UI.csproj", "{D683A924-5D23-4ABF-A72B-DAB8785F94AC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rh.Negocio", "Rh.Negocio\Rh.Negocio.csproj", "{F0B64F0E-DBD8-47BC-8F62-661A14F879E3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rh.Negocio.Test", "Rh.Negocio.Test\Rh.Negocio.Test.csproj", "{F48B9BB4-B9E6-46A0-B501-4925490EFAE2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4E3C751A-3F2D-4B1A-B492-70D9617F0850}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E3C751A-3F2D-4B1A-B492-70D9617F0850}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4E3C751A-3F2D-4B1A-B492-70D9617F0850}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4E3C751A-3F2D-4B1A-B492-70D9617F0850}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7D69BD5D-B864-4EE4-95B3-1D965BB288C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7D69BD5D-B864-4EE4-95B3-1D965BB288C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7D69BD5D-B864-4EE4-95B3-1D965BB288C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7D69BD5D-B864-4EE4-95B3-1D965BB288C5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{28E0E19F-69E4-4A77-85F3-2B41BD41658E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{28E0E19F-69E4-4A77-85F3-2B41BD41658E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{28E0E19F-69E4-4A77-85F3-2B41BD41658E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{28E0E19F-69E4-4A77-85F3-2B41BD41658E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C8476FEB-82D2-42E6-BDD6-75B791A7E719}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C8476FEB-82D2-42E6-BDD6-75B791A7E719}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C8476FEB-82D2-42E6-BDD6-75B791A7E719}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C8476FEB-82D2-42E6-BDD6-75B791A7E719}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D683A924-5D23-4ABF-A72B-DAB8785F94AC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D683A924-5D23-4ABF-A72B-DAB8785F94AC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D683A924-5D23-4ABF-A72B-DAB8785F94AC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D683A924-5D23-4ABF-A72B-DAB8785F94AC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F0B64F0E-DBD8-47BC-8F62-661A14F879E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F0B64F0E-DBD8-47BC-8F62-661A14F879E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F0B64F0E-DBD8-47BC-8F62-661A14F879E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F0B64F0E-DBD8-47BC-8F62-661A14F879E3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F48B9BB4-B9E6-46A0-B501-4925490EFAE2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F48B9BB4-B9E6-46A0-B501-4925490EFAE2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F48B9BB4-B9E6-46A0-B501-4925490EFAE2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F48B9BB4-B9E6-46A0-B501-4925490EFAE2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 8
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://matheushps.visualstudio.com/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Rh.Dominio\\Rh.Dominio.csproj
+		SccProjectName1 = Rh.Dominio
+		SccLocalPath1 = Rh.Dominio
+		SccProjectUniqueName2 = Rh.ORM\\Rh.ORM.csproj
+		SccProjectName2 = Rh.ORM
+		SccLocalPath2 = Rh.ORM
+		SccProjectUniqueName3 = Rh.Web.UI\\Rh.Web.UI.csproj
+		SccProjectName3 = Rh.Web.UI
+		SccLocalPath3 = Rh.Web.UI
+		SccProjectUniqueName4 = Rh.Negocio\\Rh.Negocio.csproj
+		SccProjectName4 = Rh.Negocio
+		SccLocalPath4 = Rh.Negocio
+		SccProjectUniqueName5 = Rh.Negocio.Test\\Rh.Negocio.Test.csproj
+		SccProjectName5 = Rh.Negocio.Test
+		SccLocalPath5 = Rh.Negocio.Test
+		SccProjectUniqueName6 = Exercicio1.Console\\Exercicio1.csproj
+		SccProjectName6 = Exercicio1.Console
+		SccLocalPath6 = Exercicio1.Console
+		SccProjectUniqueName7 = Exercicio2.Console\\Exercicio2.csproj
+		SccProjectName7 = Exercicio2.Console
+		SccLocalPath7 = Exercicio2.Console
+	EndGlobalSection
+EndGlobal

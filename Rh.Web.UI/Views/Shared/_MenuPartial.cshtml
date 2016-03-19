@@ -1,0 +1,109 @@
+﻿<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#sidebar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/home"><span>SISTEMA</span>RH</a>
+        </div>
+
+    </div>
+</nav>
+
+<div id="sidebar-collapse" class="col-sm-3 col-lg-2 sidebar">
+    <form role="search">
+        <div class="form-group">
+            <img src="~/assets/images/logo.png" />
+        </div>
+    </form>
+    <ul class="nav menu">
+        <li class="active"><a href="/Home"><svg class="glyph stroked line-graph"><use xlink:href="#stroked-line-graph"></use></svg> Gestão </a></li>
+        <li class="parent ">
+            <a href="#">
+                <span data-toggle="collapse" href="#sub-item-1"><svg class="glyph stroked male user "><use xlink:href="#stroked-male-user" /></svg></span> Gerenciar Candidatos
+            </a>
+            <ul class="children collapse" id="sub-item-1">
+                <li>
+                    <a class="" href="/Candidatos/">
+                        <svg class="glyph stroked arrow right"><use xlink:href="#stroked-arrow-right" /></svg> Candiatos
+                    </a>
+                </li>
+                <li>
+                    <a class="" href="/Formacoes/">
+                        <svg class="glyph stroked arrow right"><use xlink:href="#stroked-arrow-right" /></svg> Especialidades
+                    </a>
+                </li>
+                <li>
+                    <a class="" href="/Candidatos/Create">
+                        <svg class="glyph stroked plus sign"><use xlink:href="#stroked-plus-sign" /></svg> Novo candidato
+                    </a>
+                </li>
+            </ul>
+        </li>
+        <li class="parent ">
+            <a href="#">
+                <span data-toggle="collapse" href="#sub-item-2"><svg class="glyph stroked sound on"><use xlink:href="#stroked-sound-on" /></svg></span> Gerenciar Vagas
+            </a>
+            <ul class="children collapse" id="sub-item-2">
+                <li>
+                    <a class="" href="/Vagas/">
+                        <svg class="glyph stroked arrow right"><use xlink:href="#stroked-arrow-right" /></svg> Vagas disponíveis
+                    </a>
+                </li>
+                <li>
+                    <a class="" href="/Vagas/Create">
+                        <svg class="glyph stroked plus sign"><use xlink:href="#stroked-plus-sign" /></svg> Nova vaga
+                    </a>
+                </li>
+            </ul>
+        </li>
+        <li class="parent ">
+            <a href="#">
+                <span data-toggle="collapse" href="#sub-item-3"><svg class="glyph stroked two messages"><use xlink:href="#stroked-two-messages" /></svg></span> Gerenciar Entrevistas
+            </a>
+            <ul class="children collapse" id="sub-item-3">
+                <li>
+                    <a class="" href="/Entrevistas/">
+                        <svg class="glyph stroked arrow right"><use xlink:href="#stroked-arrow-right" /></svg> Entrevistas realizadas
+                    </a>
+                </li>
+                <li>
+                    <a class="" href="/Entrevistas/Create">
+                        <svg class="glyph stroked plus sign"><use xlink:href="#stroked-plus-sign" /></svg> Avaliar nova entrevista
+                    </a>
+                </li>
+            </ul>
+        </li>
+        <li role="presentation" class="divider"></li>
+        <li class="parent ">
+            <a href="#">
+                <span data-toggle="collapse" href="#sub-item-4"><svg class="glyph stroked gear"><use xlink:href="#stroked-gear" /></svg></span> Configurações
+            </a>
+            <ul class="children collapse" id="sub-item-4">
+                <li>
+                    <a class="" href="/Tecnologias/Create">
+                        <svg class="glyph stroked plus sign"><use xlink:href="#stroked-plus-sign" /></svg> Nova Tecnologia
+                    </a>
+                </li>
+                <li>
+                    <a class="" href="/Tecnologias/">
+                        <svg class="glyph stroked arrow right"><use xlink:href="#stroked-arrow-right" /></svg> Tecnologias Cadastradas
+                    </a>
+                </li>
+                <li>
+                    <a class="" href="/Estados/Create">
+                        <svg class="glyph stroked plus sign"><use xlink:href="#stroked-plus-sign" /></svg> Cadastrar Estado
+                    </a>
+                </li>
+                <li>
+                    <a class="" href="/Cidades/Create">
+                        <svg class="glyph stroked plus sign"><use xlink:href="#stroked-plus-sign" /></svg> Cadastrar Cidade
+                    </a>
+                </li>
+            </ul>
+        </li>
+    </ul>
+</div>

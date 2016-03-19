@@ -1,0 +1,29 @@
+﻿@model Rh.Dominio.Estado
+
+@{
+    ViewBag.Title = "Detalhes";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="panel-body panel-primary">
+    <div class="panel-heading ">
+        <svg class="glyph stroked clipboard with paper"><use xlink:href="#stroked-clipboard-with-paper" /></svg>Detalhes do estado
+    </div>
+    <hr />
+
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Nome)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Nome)
+        </dd>
+
+    </dl>
+</div>
+<div class="panel-body panel-default">
+    <div class="panel-heading ">
+        @Html.ActionLink("Voltar", "Index", new { }, new { @class = "btn btn-primary" })
+    </div>
+</div>

@@ -1,0 +1,65 @@
+﻿@model Rh.Dominio.Entrevista
+
+@{
+    ViewBag.Title = "Delete";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Entrevista</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Candidato.Nome)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Candidato.Nome)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Vaga.Nome)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Vaga.Nome)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Nota)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Nota)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Comentario)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Comentario)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DataEntrevista)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DataEntrevista)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

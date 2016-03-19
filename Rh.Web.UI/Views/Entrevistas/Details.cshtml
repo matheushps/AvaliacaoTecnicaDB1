@@ -1,0 +1,60 @@
+﻿@model Rh.Dominio.Entrevista
+
+@{
+    ViewBag.Title = "Detalhes";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="panel-body panel-primary">
+    <div class="panel-heading ">
+        <svg class="glyph stroked clipboard with paper"><use xlink:href="#stroked-clipboard-with-paper" /></svg>Detalhes da entrevista
+    </div>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Candidato.Nome)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Candidato.Nome)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Vaga.Nome)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Vaga.Nome)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Nota)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Nota)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Comentario)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Comentario)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DataEntrevista)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DataEntrevista)
+        </dd>
+
+    </dl>
+</div>
+<div class="panel-body panel-default">
+    <div class="panel-heading ">
+        @Html.ActionLink("Voltar", "Index", new { }, new { @class = "btn btn-primary" })
+    </div>
+</div>

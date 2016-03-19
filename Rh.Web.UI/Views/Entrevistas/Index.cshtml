@@ -1,0 +1,59 @@
+﻿@model IEnumerable<Rh.Dominio.Entrevista>
+
+@{
+    ViewBag.Title = "Entrevistas";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="row">
+    <div class="col-lg-12">
+        <div class="panel panel-default">
+            <div class="panel-heading">Entrevistas registradas</div>
+            <div class="panel-body">
+                <table data-toggle="table" data-show-refresh="true" data-show-toggle="true" data-show-columns="true" data-search="true" data-select-item-name="toolbar1" data-pagination="true" data-sort-name="name" data-sort-order="desc">
+                    <thead>
+                        <tr>
+                            <th data-sortable="true">@Html.DisplayNameFor(model => model.Candidato.Nome)</th>
+                            <th data-sortable="true">@Html.DisplayNameFor(model => model.Vaga.Nome)</th>
+                            <th data-sortable="true">@Html.DisplayNameFor(model => model.Nota)</th>
+                            <th data-sortable="true">@Html.DisplayNameFor(model => model.Comentario)</th>
+                            <th data-sortable="true">@Html.DisplayNameFor(model => model.DataEntrevista)</th>
+                            <th><center><strong>Ações</strong></center></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model)
+                        {
+                            <tr>
+                                <td>
+                                   @Html.DisplayFor(modelItem => item.Candidato.Nome)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.Vaga.Nome)
+                                </td>
+                                <td>
+                                   @Html.DisplayFor(modelItem => item.Nota)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.Comentario)
+                                </td>
+                                <td>
+                                   @Html.DisplayFor(modelItem => item.DataEntrevista)
+                                </td>
+
+                                <td>
+                                    <center>
+                                        <a href="@Url.Action("Edit", new { id = item.EntrevistaId })" class="btn btn-default"><i class="glyphicon glyphicon-edit"></i></a>
+                                        <a href="@Url.Action("Details", new { id = item.EntrevistaId })" class="btn btn-default"><i class="glyphicon glyphicon-file"></i></a>
+                                        <a href="@Url.Action("Delete", new { id = item.EntrevistaId })" class="btn btn-default"><i class="glyphicon glyphicon-trash"></i></a></center>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+ 
